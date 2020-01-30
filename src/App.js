@@ -68,7 +68,6 @@ class App extends React.Component {
   }
 
   displayFacebox = (box) => {
-    console.log(box);
     this.setState({box: box});
   }
 
@@ -87,11 +86,9 @@ class App extends React.Component {
   }
 
   onRouteChange = (route) => {
-    console.log(route);
     if (route === 'signout') {
       this.setState({isSignedIn: false})
     } else if (route === 'home') {
-      console.log(route);
       this.setState({isSignedIn: true})
     } 
     this.setState({route: route});
