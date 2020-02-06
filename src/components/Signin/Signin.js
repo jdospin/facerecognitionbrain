@@ -43,7 +43,7 @@ class Signin extends React.Component {
                 <main className="pv4">
                     <div className="measure">
                         <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
-                            <legend className="f1 fw5 ph0 mh0">Sign In</legend>
+                            <legend className="f2 fw5 ph0 mh0">Sign In</legend>
                             <div className="mt3">
                                 <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
                                 <input 
@@ -73,7 +73,7 @@ class Signin extends React.Component {
                                 value="Sign in" />
                         </div>
                         <div className="lh-copy mt3">
-                            <p onClick={this.onSubmitSignIn} className="f6 link dim black db pointer">Register</p>
+                            <p onClick={() => this.props.onRouteChange('register')} className="f6 link dim black db pointer">Register</p>
                         </div>
                     </div>
                 </main>
