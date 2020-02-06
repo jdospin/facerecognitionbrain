@@ -25,10 +25,6 @@ const particlesParams = {
       "onhover": {
         "enable": true,
         "mode": 'repulse'
-      },
-      "onclick": {
-        "enable": true,
-        "mode": 'push'
       }
     }
   }
